@@ -1,4 +1,5 @@
 # oa2svcnow
+<pre>
 Easy python script that exports devices from OpenAudIT to ServiceNow
 
 Overview
@@ -71,3 +72,4 @@ svcnowUsername:admin
 svcnowPassword:superSecret
 svcnowInstance:1234567
 svcnowTable:u_oa
+</pre>
