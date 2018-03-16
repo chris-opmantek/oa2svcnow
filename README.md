@@ -5,21 +5,23 @@ Easy python script that exports devices from OpenAudIT to ServiceNow
 Overview
 
 Some OpenAudIT users may want to export their device list to ServiceNow.  
-We'd like to present an easy python3 script that facilitates the exporting of OpenAudIT devices to ServiceNow.  
-This script will work with any ServiceNow schema, simply edit the columnTranslate dictionary found inside and supply the ServiceNow table name in the system variables file.
+We'd like to present an easy python3 script that facilitates the exporting of OpenAudIT devices to 
+ServiceNow.  This script will work with any ServiceNow schema, simply edit the columnTranslate 
+dictionary found inside and supply the ServiceNow table name in the system variables file.
 
 Prerequisites
 - Install the pysnow python module.  http://pysnow.readthedocs.io/en/latest/
-- Select a ServiceNow table. (For the uninitiated the table name is not the label presented to humans; it may be found in 'System Definitions - Tables'.)
-- Create a mapping of OpenAudIT device attributes to ServiceNow columns. (Again the column name is not the label value.)
+- Select a ServiceNow table. 
+- Create a mapping of OpenAudIT device attributes to ServiceNow columns.
 - Create a plain text file with server and user attributes.
 
 OpenAudIT Device List
 
 For this exercise we'll want to download the OpenAudIT device list in JSON format.  
-This format is the easiest way to convert the device list into a data structure that can be sent to ServiceNow.  
-Open a browser to http://<OpenAudIT_server>/omk/open-audit/devices.json.  Some browsers will render the JSON file by default.  
-We are interested in the 'attributes' section that each device will have. 
+This format is the easiest way to convert the device list into a data structure that can be sent to 
+ServiceNow.  Open a browser to http://<OpenAudIT_server>/omk/open-audit/devices.json.  Some browsers 
+will render the JSON file by default.  We are interested in the 'attributes' section that each device 
+will have. 
 
 Example:
 
